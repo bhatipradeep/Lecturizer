@@ -3,7 +3,7 @@ var ses = new aws.SES({ region: "us-east-1" });
 
 
 exports.handler = async function (event) {
-    const source = "bh.pradeepsingh@gmail.com";
+    const source = "";
     event.Records.forEach(async (record) => {
         const destination = record.dynamodb.NewImage.emailId.S;
         const link = record.dynamodb.NewImage.docLink.S;
