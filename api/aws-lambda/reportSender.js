@@ -21,6 +21,16 @@ exports.handler = async function (event) {
             Source: source,
         }
         console.log(params);
-        await ses.sendEmail(params).promise();
+        var sesPromise = ses.sendEmail(params).promise();
+        await sesPromise;
     });
 };
+
+
+
+
+
+
+
+
+
