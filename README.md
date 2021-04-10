@@ -9,8 +9,10 @@
 ## Introduction:
   A system designed to provide better lecture insights from recordings. This will be helpful to students and teachers.
   
-//## Table of Contents:
-
+## Table of Contents:
+1) Technology Stack
+2) Contributors 
+3) Instructions to run 
 ## Technology Stack:
   1) Google Collab
   2) Python
@@ -27,6 +29,11 @@ Team Name: DevMonks
 * [Suyash Trivedi](https://github.com/suyashtrivedi99)
 * [Nisarg Shah](https://github.com/tesla1310)
 
+## Inscructions to run : 
+1) Download source code zip file from [releases] (https://github.com/bhatipradeep/Lecturizer/releases/tag/v1.0)
+2) Extract it at any location
+3) Run setup.bat to install. Make sure you have python and pip pre-installed
+4) Run the Lecturizer.bat
 
 
 ### Made at:
