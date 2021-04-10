@@ -1,5 +1,5 @@
-# Lecturizer
-<h1 align="center">Hack36 Template Readme</h1>
+
+<h1 align="center">Lecturizer</h1>
 <p align="center">
 </p>
 
@@ -23,7 +23,7 @@
 
 Team Name: DevMonks
 
-* [Pradeep Bhati](https://github.com/bhatipradeep
+* [Pradeep Bhati](https://github.com/bhatipradeep)
 * [Suyash Trivedi](https://github.com/suyasht99)
 * [Nisarg Shah](https://github.com/tesla1310)
 
