@@ -15,6 +15,16 @@ from nltk.cluster.util import cosine_distance
 import numpy as np
 import networkx as nx
 
+#Libraries from tfidf.py
+from nltk import tokenize
+from operator import itemgetter
+import math
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize 
+
+from tfidf import check_sent, get_top_n, tf_idf
+
 #Function to split the report into sentences
 def read_article(file_name):
     file = open(file_name, "r")
@@ -177,13 +187,15 @@ def index():
 
             docs.add_transcription(transtr)
 
-            docs.add_summary(generate_summary("transcription.txt"))
-            docs.add_imp_words([])
+            transsum = generate_summary("transcription.txt")
+
+            docs.add_summary(transsum)
+            docs.add_imp_words(tf_idf(transtr))
 
             #Removing temporary video and sound files
             os.remove(wavpath)
             os.remove(fpath)  
-        return render_template('download.html')
+
     return render_template('index.html')
 
 @app.route('/return-file')
