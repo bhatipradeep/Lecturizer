@@ -2,6 +2,7 @@ ECHO OFF
 pip install setuptools virtualenv
 pip install flask
 pip install flask-sqlalchemy
+pip install SpeechRecognition
 pip install moviepy
 pip install werkzeug
 pip install wave
