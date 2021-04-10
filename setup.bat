@@ -11,6 +11,7 @@ pip install nltk
 pip install numpy
 pip install networkx
 pip install python-docx
+pip install operator
 
 ECHO installation successfull
 PAUSE
