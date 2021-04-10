@@ -9,7 +9,7 @@
 ## Introduction:
   A system designed to provide better lecture insights from recordings. This will be helpful to students and teachers.
   
-## Table of Contents:
+//## Table of Contents:
 
 ## Technology Stack:
   1) Google Collab
