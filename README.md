@@ -15,7 +15,7 @@
   1) Google Collab
   2) Python
   3) Flask
-  4) Natural Language Programming 
+  4) Natural Language Processing
   5) Speech Recognition
   
 
