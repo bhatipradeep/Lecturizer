@@ -12,11 +12,11 @@
 ## Table of Contents:
 
 ## Technology Stack:
-  1) Node.JS
-  2) Google Collab
-  3) Python
-  4) Flask
-  5) Machine Learning
+  1) Google Collab
+  2) Python
+  3) Flask
+  4) Natural Language Programming 
+  5) Speech Recognition
   
 
 ## Contributors:
