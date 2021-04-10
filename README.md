@@ -24,7 +24,7 @@
 Team Name: DevMonks
 
 * [Pradeep Bhati](https://github.com/bhatipradeep)
-* [Suyash Trivedi](https://github.com/suyasht99)
+* [Suyash Trivedi](https://github.com/suyashtrivedi99)
 * [Nisarg Shah](https://github.com/tesla1310)
 
 
