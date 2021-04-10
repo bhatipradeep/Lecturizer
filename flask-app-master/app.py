@@ -6,6 +6,8 @@ from moviepy.editor import AudioFileClip
 from werkzeug.utils import secure_filename
 import wave, math, contextlib
 import os
+import DocMaker
+import docx
 
 #Libraries for generating summary of a report
 from nltk.corpus import stopwords
@@ -109,7 +111,11 @@ def generate_summary(file_name):
     fo.write(summarytxt + ".")
     fo.close()
 
+    return summarytxt
+
 app = Flask(__name__)
+
+docs = DocMaker.DocMaker("lol")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -129,6 +135,8 @@ def index():
             fpath = os.path.join(r"video-audio-data/", secure_filename(f.filename))
             wavpath = "video-audio-data/temp.wav"
             
+            docs.file_name = f.filename
+
             #Saving video file temporarily
             f.save(fpath)
 
@@ -154,6 +162,8 @@ def index():
                 os.remove("transcription.txt")
             if os.path.exists("summary.txt"):
                 os.remove("summary.txt")
+            
+            transtr = ""
 
             #Converting each chunk into text and adding it to the transcription file
             for i in range(0, total_duration):
@@ -161,10 +171,14 @@ def index():
                     audio = r.record(source, offset=i*chunksize, duration=chunksize)
                 fo = open("transcription.txt", "a")
                 fo.write(r.recognize_google(audio))
+                transtr = transtr + r.recognize_google(audio) + ". "
                 fo.write(". ")
             fo.close()
 
-            generate_summary("transcription.txt")
+            docs.add_transcription(transtr)
+
+            docs.add_summary(generate_summary("transcription.txt"))
+            docs.add_imp_words([])
 
             #Removing temporary video and sound files
             os.remove(wavpath)
