@@ -14,5 +14,7 @@ pip install networkx
 pip install python-docx
 pip install operator
 
+python setup.py
+
 ECHO installation successfull
 PAUSE
