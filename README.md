@@ -9,7 +9,8 @@
 ## Introduction:
   A system designed to provide better lecture insights from video recordings. This will be helpful to students and teachers alike.
   
-## Demo Video Link 
+## Demo Video Link
+https://youtu.be/19jPNyPZdzU
 
 ## Presentation Link
 https://drive.google.com/file/d/150HKtqStafu4GcxdIvAtj_OHRhkgDtq_/view?usp=sharing
