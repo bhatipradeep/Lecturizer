@@ -195,12 +195,8 @@ def index():
             #Removing temporary video and sound files
             os.remove(wavpath)
             os.remove(fpath)  
-
+        return render_template('download.html')
     return render_template('index.html')
-
-@app.route('/return-file')
-def return_file():
-    return send_file("summary.txt", as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
