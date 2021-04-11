@@ -9,6 +9,11 @@
 ## Introduction:
   A system designed to provide better lecture insights from video recordings. This will be helpful to students and teachers alike.
   
+## Demo Video Link 
+
+## Presentation Link
+https://drive.google.com/file/d/150HKtqStafu4GcxdIvAtj_OHRhkgDtq_/view?usp=sharing
+  
 ## Table of Contents:
 1) Technology Stack
 2) Contributors 
