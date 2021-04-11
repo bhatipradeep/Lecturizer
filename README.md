@@ -30,7 +30,7 @@ Team Name: DevMonks
 * [Nisarg Shah](https://github.com/tesla1310)
 
 ## Instructions to run : 
-1) Download source code zip file from releases (https://github.com/bhatipradeep/Lecturizer/releases/tag/v1.0)
+1) Download source code zip file from releases (https://github.com/bhatipradeep/Lecturizer/releases/)
 2) Extract it at any location
 3) Run setup.bat to install. Make sure you have python and pip pre-installed
 4) Run the Lecturizer.bat present in flask-app-master folder
